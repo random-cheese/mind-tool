@@ -1,9 +1,11 @@
 # Mindvalley 爬虫
-写于 2021-4-20
+写于 2021-4-20 * 2021-4-21
 
 ## 说明
-* 为了避免安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等)   
-用了 Docker，所以以下是告诉你怎么跑 Docker 
+* 技术栈：Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
+
+## 准备工作
+* 安装 Docker 的 macOS 版并运行，顶部任务栏可以看到 docker 图标就算成功
 
 ## 如何运行？（用 Makefile）
 1. 获取镜像
@@ -19,8 +21,6 @@ make step-2-run-docker-image
 3. Makefile 文件中顶部可以配置下载什么课程，以及下载到哪里。
 
 ## 如何运行？（纯用 Docker）
-0. macOS 安装 Docker 的 mac 版本，并且运行起来，顶部任务栏可以看到 docker 的图标就算成功。
-
 1. 获取镜像
 ```
 docker pull registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
