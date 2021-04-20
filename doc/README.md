@@ -25,3 +25,13 @@ node index.js
 ## 文件夹结构
 * config/ 配置
 * src/ 源代码目录
+
+## 什么时候写的
+* 最初写于：2021-4-20
+* 第1次更新：2021-4-21
+
+## 技术栈
+* Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
+* Node.js + Puppeteer
+* `youtube-dl-exec`
+* ffmpeg
