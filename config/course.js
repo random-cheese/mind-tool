@@ -3,7 +3,7 @@
 exports.default = [
 	// 按以下的模板格式即可
 	// {
-	// 	course_name: '10X', // 课程名
+	// 	course_name: '10X', // 课程名 (保存文件夹会用这个名字)
 	// 	url: 'https://home.mindvalley.com/quests/en/10x' // 课程链接
 	// },
 	{
