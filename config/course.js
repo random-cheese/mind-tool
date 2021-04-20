@@ -2,10 +2,10 @@
 
 exports.default = [
 	// 按这个模板格式即可
-	// {
-	// 	course_name: '10X', // 课程名
-	// 	url: 'https://home.mindvalley.com/quests/en/10x' // 课程链接
-	// },
+	{
+		course_name: '10X', // 课程名
+		url: 'https://home.mindvalley.com/quests/en/10x' // 课程链接
+	},
 	{
 		course_name: 'The Longevity Blueprint',
 		url: 'https://home.mindvalley.com/quests/en/longevity'
