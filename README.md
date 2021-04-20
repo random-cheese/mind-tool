@@ -1,14 +1,6 @@
 # Mindvalley 爬虫
-用途：把一整门课下载下来。   
-
-* 写于 2021-4-20
-* 更新 2021-4-21
-
-## 说明
-* 技术栈：Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
-* Node.js + Puppeteer
-* `youtube-dl-exec`
-* ffmpeg
+用途：把一整门课下载下来（.mp4 视频文件和 .srt 字幕文件）  
+文件夹结构和网站一致，比如 `10X（课程名)` > `Week 1` > `Day 1`   
 
 ## 准备工作
 1. 安装 Docker 的 macOS 版并运行，顶部任务栏可以看到 docker 图标就算成功
@@ -66,3 +58,13 @@ docker exec -it 4fb972f88c43b052c6705118d07495bf120bf24aca76d7f653db572444ad7a98
 ```
 node index.js
 ```
+
+## 什么时候写的
+* 写于 2021-4-20
+* 更新 2021-4-21
+
+## 技术栈
+* Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
+* Node.js + Puppeteer
+* `youtube-dl-exec`
+* ffmpeg
