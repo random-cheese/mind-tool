@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "m3u8-file-parser": "^0.2.4",
+    "node-fetch": "^2.6.1",
+    "puppeteer": "^8.0.0",
+    "sanitize-filename": "^1.6.3",
+    "youtube-dl-exec": "^1.2.1"
+  },
+  "name": "crawler_mindvalley",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:1c7/crawler_mindvalley.git",
+  "author": "1c7 <guokrfans@gmail.com>",
+  "license": "MIT"
+}
