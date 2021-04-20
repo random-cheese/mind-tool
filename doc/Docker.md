@@ -5,3 +5,57 @@ https://docs.docker.com/storage/volumes/
 https://docs.docker.com/storage/bind-mounts/
 When you use a bind mount, a file or directory on the host machine is mounted into a container. The file or directory is referenced by its absolute path on the host machine.
 The file or directory does not need to exist on the Docker host already.
+
+
+## 问答
+1. 怎么设置下载哪些课程？
+  The work around is to use Docker volumes to inject files from your host machine to the container when running it.
+  docker run 的时候用 -v 覆盖掉 config/course.js
+
+2. 如何指定下载路径？
+  docker run 的时候指定 -mount 做目录映射。
+
+## 本地运行
+```bash
+docker build . -t mind8
+```
+
+```
+docker run -d \
+  -it \
+  --name mindV3 \
+  --mount type=bind,source=/Users/remote_edit/Downloads/,target=/usr/src/app/courses \
+  mind8
+```
+
+## 内森硬盘地址运行
+```
+docker run -d \
+  -it \
+  --name mindvalley_crawler \
+  --mount type=bind,source="/Volumes/NatLi/Mindvalley Course",target=/usr/src/app/courses \
+  registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v1
+```
+
+## 更新镜像
+1. 构建
+```
+docker build . -t mind8
+```
+
+2. docker 登录
+```
+docker login --username=胡萝卜agoodob registry.cn-hangzhou.aliyuncs.com
+```
+(此处会提示输入密码, 密码是阿里云上设置的镜像仓库密码)
+https://cr.console.aliyun.com/cn-hangzhou/instance/repositories
+
+3. 打 tag
+```
+docker tag mind8 registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+```
+
+4. 推送
+```
+docker push registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+```
