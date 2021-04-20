@@ -1,0 +1,169 @@
+[
+  {
+    "name": "ab.storage.deviceId.de475362-6f5e-417d-838c-8ea69de826d2",
+    "value": "%7B%22g%22%3A%2226763df1-38e8-e00a-70a2-18dcbd71f1ea%22%2C%22c%22%3A1618852022028%2C%22l%22%3A1618852022028%7D",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 2249990822,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "ajs_user_id",
+    "value": "%22auth0%7C607ac6631b61d4006895b375%22",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1650459573,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ajs_anonymous_id",
+    "value": "%22e8f52960-6ae0-4304-a34f-ec2676cc08de%22",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1650459574,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "ab.storage.userId.de475362-6f5e-417d-838c-8ea69de826d2",
+    "value": "%7B%22g%22%3A%22auth0%7C607ac6631b61d4006895b375%22%2C%22c%22%3A1618852023157%2C%22l%22%3A1618852023157%7D",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 2249990823,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1533068620.1618870809",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1626646809,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_fbp",
+    "value": "fb.1.1618870810363.1836357761",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1626646810,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.972841520.1618870809",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1681943348,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.1197424766.1618870812",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1618957748,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_pin_unauth",
+    "value": "dWlkPVpqQXpaREZoWWpZdE56QTVOaTAwTVdNNUxXSmlOVGN0TnprNU1tWTJZalV6T0daag",
+    "domain": ".home.mindvalley.com",
+    "path": "/",
+    "expires": 1650406811,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "stc116948",
+    "value": "tsa:1618870812626.1145504281.4733963.7195558083333609.:20210419225012|env:1%7C20210520222012%7C20210419225012%7C1%7C1064557:20220419222012|uid:1618870812624.115844534.51751995.116948.350345646.:20220419222012|srchist:1064557%3A1%3A20210520222012:20220419222012",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1650407171,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_uetsid",
+    "value": "68dfe200a15d11eb9119eb2b2581aff5",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1618957212,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_uetvid",
+    "value": "68e0c360a15d11eb89792f5e84c6561e",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1620274812,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_hjid",
+    "value": "1cba0902-5cb9-4c46-a684-e2e2a438384f",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1650406814,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "intercom-session-n7t9gje6",
+    "value": "eFdpS2JxanBRdEw4ZEZvaG1QTVVLdFZ6SWZ3SVRiZVI4NjNwU0oyL2ZFZFlSakJlaUh5ZVVLWE1xaTdaVXZCYi0tU1FuMmtYSE9qbEdIMEk1eTFCYVg0UT09--019e93f5a42df88f2f290e27faa662059a318bc7",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1619475614,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_ga_CG559CJ2KJ",
+    "value": "GS1.1.1618870809.1.1.1618871165.60",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 1681943165,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_mindvalley_com_key",
+    "value": "SFMyNTY.g3QAAAAHbQAAAAxjdXJyZW50X3BhdGhtAAAADi9xdWVzdHMvZW4vMTB4bQAAAAxjdXJyZW50X3VzZXJiAJBkr20AAAATY3VycmVudF91c2VyX2JlYXJlcm0AAAAgR1N1anhhWHE5LTdZTTlyVFVYQVpPSlJtdTgyYTFaNVRtAAAAEmN1cnJlbnRfdXNlcl90b2tlbm0AAAJbZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5Sm9kSFJ3Y3pvdkwyaHZiV1V1YldsdVpIWmhiR3hsZVM1amIyMHZiRzluYVc1UWNtOTJhV1JsY2lJNkltRjFkR2d3SWl3aWFIUjBjSE02THk5dGFXNWtkbUZzYkdWNUxtTnZiUzlzWVc1bklqb2llbWdpTENKb2RIUndjem92TDIxcGJtUjJZV3hzWlhrdVkyOXRMMlpwY25OMFgyNWhiV1VpT2lKT0lpd2lhSFIwY0hNNkx5OXRhVzVrZG1Gc2JHVjVMbU52YlM5c1lYTjBYMjVoYldVaU9pSk1JaXdpYm1GdFpTSTZJazRnVENJc0ltVnRZV2xzSWpvaWJHbDZhWGhwTG1GcFpYTmxZMjVyZFVCbmJXRnBiQzVqYjIwaUxDSmxiV0ZwYkY5MlpYSnBabWxsWkNJNmRISjFaU3dpYVhOeklqb2lhSFIwY0hNNkx5OXNiMmRwYmk1dGFXNWtkbUZzYkdWNUxtTnZiUzhpTENKemRXSWlPaUpoZFhSb01IdzJNRGRoWXpZMk16RmlOakZrTkRBd05qZzVOV0l6TnpVaUxDSmhkV1FpT2lKTFVtRkdiVU5sYTNSQmRGaFNObk5rTW1kMWJWZFdSbEZoTmtGdVdHNTNSaUlzSW1saGRDSTZNVFl4T0Rrd056QTJOaXdpWlhod0lqb3hOakl3TVRFMk5qWTJmUS52LWtYa1lYWVlFZlFyYkV6WW41c1RuNE0wZWMtUUZwWW5BX25BS3dVV2g0bQAAAAZsb2NhbGVtAAAAAnpobQAAAAxyZWRpcmVjdF91cmxtAAAADi9xdWVzdHMvZW4vMTB4bQAAAAxyZWZlcmVyX3BhdGhkAANuaWw.ORB_V8gjo-dVBNZBkUHQcDudqQDxteUkSFC4eCm7tEI",
+    "domain": "home.mindvalley.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": false
+  },
+  {
+    "name": "user_id",
+    "value": "auth0|607ac6631b61d4006895b375",
+    "domain": "home.mindvalley.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "ab.storage.sessionId.de475362-6f5e-417d-838c-8ea69de826d2",
+    "value": "%7B%22g%22%3A%2239d635f2-8867-ccdd-60ba-15a265f8871a%22%2C%22e%22%3A1618925374856%2C%22c%22%3A1618923573839%2C%22l%22%3A1618923574856%7D",
+    "domain": ".mindvalley.com",
+    "path": "/",
+    "expires": 2250062374,
+    "httpOnly": false,
+    "secure": false
+  }
+]
