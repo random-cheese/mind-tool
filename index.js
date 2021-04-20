@@ -1,4 +1,3 @@
-const puppeteer = require("puppeteer");
 var fs = require("fs");
 var sanitize = require("sanitize-filename");
 const { get_quest_data } = require("./src/get_quest_data");
@@ -7,17 +6,7 @@ const { get_subtitle } = require("./src/get_subtitle");
 const { get_video } = require("./src/get_video");
 const { get_info } = require("./src/get_info.js");
 
-// 原理：
-// 1. 通过 Chrome 扩展，下载得到一个 home.mindvalley.com.cookies.json 文件
-// 2. 让 Puppeteer 用这个 cookie
-// 3. 访问单个课程页，如 https://home.mindvalley.com/quests/en/10x
-// 4. 获得 Bearer token，和 quest_id
-// 5. 用 Bearer token 发请求，获得这门课的信息
-// 7. 处理课程里每一节（更换不同的 page id 就行）比如 https://home.mindvalley.com/quests/en/10x/days/1
-// 8. 一节里面可能有多个视频（比如 https://home.mindvalley.com/quests/en/10x/days/1 有5个视频）
-// 9. 逐个下载视频，如果有字幕也一并下载
-
-// 保存路径 （可配置）
+// 保存文件夹（可配置）
 const OUTPUT_FOLDER = "./courses"; // 结尾不需要加一个 /
 
 // 要下载的课程列表（可配置）
@@ -71,9 +60,9 @@ async function process_video_section(video_section, folder, index, page_name) {
   var m3u8 = video_section.primaryAsset.renditions.find(
     (rend) => rend.id == "hls"
   );
-  var mp4 = video_section.primaryAsset.renditions.find(
-    (rend) => rend.id == "mp4"
-  );
+  // var mp4 = video_section.primaryAsset.renditions.find(
+  //   (rend) => rend.id == "mp4"
+  // );
   var url = video_section.primaryAsset.url;
   var title = video_section.info.title;
 
@@ -93,7 +82,6 @@ async function process_video_section(video_section, folder, index, page_name) {
     console.log("处理 section 时出现错误");
     console.log(title);
     console.log(video_section);
-    // console.log(JSON.stringify(video_section.primaryAsset.renditions));
     console.log(error);
   }
 
