@@ -1,9 +1,8 @@
-# FROM node:14
 FROM buildkite/puppeteer:latest 
 # https://hub.docker.com/r/buildkite/puppeteer
 
 RUN  apt-get update \
-	&& apt-get install -y python3 python tree
+	&& apt-get install -y python3 python tree ffmpeg
 
 # USER xx
 WORKDIR /usr/src/app
@@ -14,4 +13,3 @@ RUN npm install puppeteer
 COPY . .
 
 CMD [ "node" ]
-# CMD [ "bin/bash" ]
