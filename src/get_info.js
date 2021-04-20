@@ -1,5 +1,4 @@
-// 获取一门课的数据
-// token 和 quest_id
+// 用 puppeteer 获取 token 和 quest_id
 // 其实只有 quest_id 是每次需要拿新的，token 不需要，但是顺手就也拿了
 
 const puppeteer = require("puppeteer");
@@ -28,6 +27,7 @@ async function get_info(course_url) {
     waitUntil: "domcontentloaded",
   });
   const data = await page.evaluate(() => {
+    // 返回这个对象
     return {
       token: window.appSettings.token,
       quest_id: window.quest.id,

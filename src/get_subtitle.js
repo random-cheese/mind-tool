@@ -1,4 +1,5 @@
-// 下载字幕
+// 下载字幕（原理是用 ffmpeg 处理 .m3u8 URL，最终下载得到 .srt 文件）
+
 const fetch = require("node-fetch");
 const M3U8FileParser = require("m3u8-file-parser");
 var ffmpeg = require("fluent-ffmpeg");
