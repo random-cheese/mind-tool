@@ -14,8 +14,7 @@ async function get_info(course_url) {
   // 基础设定
   const browser = await puppeteer.launch({
     // headless: false,
-    executablePath:
-      "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    // executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   });
   const page = await browser.newPage();
   await page.setViewport({
