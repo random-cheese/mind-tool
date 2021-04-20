@@ -14,6 +14,8 @@ step-1-pull-docker-image:
 
 # 第二步：运行镜像
 step-2-run-docker-image:
+	# docker run -d 命令会返回 container ID
+	# 我们把 container ID 存入 CID 变量，然后在 docker exec 命令中使用它
 	CID=$$(docker run -d \
   -it \
   --mount type=bind,source=$(Download_Path),target=/usr/src/app/courses \

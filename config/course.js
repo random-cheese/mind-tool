@@ -1,7 +1,7 @@
-// 要写在什么课程就写在这里
+// 配置：下载哪些课程
 
 exports.default = [
-	// 按这个模板格式即可
+	// 按以下的模板格式即可
 	// {
 	// 	course_name: '10X', // 课程名
 	// 	url: 'https://home.mindvalley.com/quests/en/10x' // 课程链接
