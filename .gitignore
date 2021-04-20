@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.vscode/
+*.mp4
+*.pdf
+*.mkv
+*.webm
+*.srt
+*.part
+courses/
+home.mindvalley.com.cookies.json
