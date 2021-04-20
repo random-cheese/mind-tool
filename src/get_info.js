@@ -13,6 +13,7 @@ async function get_info(course_url) {
 
   // 基础设定
   const browser = await puppeteer.launch({
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
     // headless: false,
     // executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
   });

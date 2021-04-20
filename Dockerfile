@@ -1,5 +1,11 @@
 # FROM node:14
-FROM buildkite/puppeteer:latest
+FROM buildkite/puppeteer:latest 
+# https://hub.docker.com/r/buildkite/puppeteer
+
+RUN  apt-get update \
+	&& apt-get install -y python3 python
+
+# USER xx
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install -g npm
