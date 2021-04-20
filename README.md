@@ -6,9 +6,13 @@
 
 ## 说明
 * 技术栈：Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
+* Node.js + Puppeteer
+* `youtube-dl-exec`
+* ffmpeg
 
 ## 准备工作
-* 安装 Docker 的 macOS 版并运行，顶部任务栏可以看到 docker 图标就算成功
+1. 安装 Docker 的 macOS 版并运行，顶部任务栏可以看到 docker 图标就算成功
+2. 如果运行失败就更新 `home.mindvalley.com.cookies.json` 这个 Cookie 文件
 
 ## 如何运行？（用 Makefile）
 1. 获取镜像
