@@ -1,5 +1,8 @@
 # Mindvalley 爬虫
-写于 2021-4-20 * 2021-4-21
+用途：把一整门课下载下来。   
+
+* 写于 2021-4-20
+* 更新 2021-4-21
 
 ## 说明
 * 技术栈：Docker。为了避免手工安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等) 
@@ -18,7 +21,7 @@ make step-1-pull-docker-image
 make step-2-run-docker-image
 ```
 
-3. Makefile 文件中顶部可以配置下载什么课程，以及下载到哪里。
+3. （如何配置）Makefile 文件中顶部可以配置下载什么课程，以及下载到哪里。
 
 ## 如何运行？（纯用 Docker）
 1. 获取镜像
