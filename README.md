@@ -5,7 +5,20 @@
 * 为了避免安装一堆依赖 (npm,yarn,brew,git,node.js,youtube-dl,ffmpeg,python等)   
 用了 Docker，所以以下是告诉你怎么跑 Docker 
 
-## 如何运行？
+## 如何运行？（用 Makefile）
+1. 获取镜像
+```
+make step-1-pull-docker-image
+```
+
+2. 运行镜像
+```
+make step-2-run-docker-image
+```
+
+3. Makefile 文件中顶部可以配置下载什么课程，以及下载到哪里。
+
+## 如何运行？（纯用 Docker）
 0. macOS 安装 Docker 的 mac 版本，并且运行起来，顶部任务栏可以看到 docker 的图标就算成功。
 
 1. 获取镜像
