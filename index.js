@@ -87,11 +87,21 @@ async function process_video_section(video_section, folder, index, page_name) {
 
   // 下载视频
   const video_filepath = `${folder}/${output_video_filename}`;
-  await get_video(url, video_filepath);
+  try {
+    await get_video(url, video_filepath);
+  } catch (error) {
+    console.log(error);
+    console.log(`出错: 下载视频 ${video_filepath} 失败`);
+  }
 
   // 下载字幕
   var subtitle_filepath = `${folder}/${output_subtitle_filename}`;
-  await get_subtitle(m3u8.url, subtitle_filepath);
+  try {
+    await get_subtitle(m3u8.url, subtitle_filepath);
+  } catch (error) {
+    console.log(error);
+    console.log(`出错: 下载字幕 ${subtitle_filepath} 失败`);
+  }
 }
 
 // 处理一页（一个 page）

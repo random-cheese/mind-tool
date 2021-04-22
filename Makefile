@@ -2,10 +2,10 @@ SHELL=/bin/bash
 DOCKER_IMAGE=registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
 # 镜像地址（公开）
 
-Config_File_Path="/Users/remote_edit/Downloads/mind-tool/config/course.js"
+Config_File_Path="/Volumes/BackupPlus/mind-tool/config/course.js"
 # 下载哪些课程（配置文件的路径）
 
-Download_Path="/Users/remote_edit/Downloads/"
+Download_Path="/Volumes/BackupPlus/mind-tool/course111"
 # 下载到哪里（文件夹路径）
 
 # 第一步：下载镜像
