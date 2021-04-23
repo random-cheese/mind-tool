@@ -184,7 +184,14 @@ async function process_course(course_name) {
       console.log(page.groupName);
     }
 
-    var page_data = await get_page_data(http_auth_bearer_token, page_id);
+    try {
+      var page_data = await get_page_data(http_auth_bearer_token, page_id);
+    } catch (error) {
+      console.log('获取 page_data 失败');
+      console.log(`暂时跳过 ${page_folder}`);
+      console.log(error);
+      continue
+    }
     await process_page(page_data, page_folder);
   }
 }

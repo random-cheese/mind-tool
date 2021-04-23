@@ -24,44 +24,44 @@ exports.default = [
 	// 	url: 'https://home.mindvalley.com/quests/en/totaltransformation'
 	// },
 
-	{
-		course_name: 'The Mastery of Sleep',
-		url: 'https://home.mindvalley.com/quests/en/sleep'
-	},
-	{
-		course_name: 'The Mindvalley Yoga Quest',
-		url: 'https://home.mindvalley.com/quests/en/yoga'
-	},
-	{
-		course_name: 'The Way of the Kettlebell',
-		url: 'https://home.mindvalley.com/quests/en/kettlebell'
-	},
-	{
-		course_name: 'The Immunity Blueprint',
-		url: 'https://home.mindvalley.com/quests/en/immunity'
-	},
-	{
-		course_name: 'The Habit of Ferocity',
-		url: 'https://home.mindvalley.com/quests/en/peak'
-	},
-	{
-		course_name: 'Be Extraordinary',
-		url: 'https://home.mindvalley.com/quests/en/be-extraordinary'
-	},
-	{
-		course_name: 'Hero. Genius. Legend.',
-		url: 'https://home.mindvalley.com/quests/en/genius'
-	},
+	// {
+	// 	course_name: 'The Mastery of Sleep',
+	// 	url: 'https://home.mindvalley.com/quests/en/sleep'
+	// },
+	// {
+	// 	course_name: 'The Mindvalley Yoga Quest',
+	// 	url: 'https://home.mindvalley.com/quests/en/yoga'
+	// },
+	// {
+	// 	course_name: 'The Way of the Kettlebell',
+	// 	url: 'https://home.mindvalley.com/quests/en/kettlebell'
+	// },
+	// {
+	// 	course_name: 'The Immunity Blueprint',
+	// 	url: 'https://home.mindvalley.com/quests/en/immunity'
+	// },
+	// {
+	// 	course_name: 'The Habit of Ferocity',
+	// 	url: 'https://home.mindvalley.com/quests/en/peak'
+	// },
+	// {
+	// 	course_name: 'Be Extraordinary',
+	// 	url: 'https://home.mindvalley.com/quests/en/be-extraordinary'
+	// },
+	// {
+	// 	course_name: 'Hero. Genius. Legend.',
+	// 	url: 'https://home.mindvalley.com/quests/en/genius'
+	// },
 	
-	// -----------------
-	{
-		course_name: 'Superbrain',
-		url: 'https://home.mindvalley.com/quests/en/superbrain'
-	},
-	{
-		course_name: 'Speak and Inspire',
-		url: 'https://home.mindvalley.com/quests/en/speak'
-	},
+	// // -----------------
+	// {
+	// 	course_name: 'Superbrain',
+	// 	url: 'https://home.mindvalley.com/quests/en/superbrain'
+	// },
+	// {
+	// 	course_name: 'Speak and Inspire',
+	// 	url: 'https://home.mindvalley.com/quests/en/speak'
+	// },
 	{
 		course_name: 'The Integral Life',
 		url: 'https://home.mindvalley.com/quests/en/integral'
