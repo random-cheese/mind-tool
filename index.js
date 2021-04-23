@@ -139,7 +139,7 @@ async function process_course(course_name) {
   var pages = json.data.quest.pages;
   const filtered_pages = pages.filter((page) => page.type === "day" || page.type === "intro");
   for (let i = 0; i < filtered_pages.length; i++) {
-    const page = pages[i];
+    const page = filtered_pages[i];
     // console.log(page.type);
     // 已知类型
     // type: day
