@@ -43,12 +43,12 @@ https://cr.console.aliyun.com/cn-hangzhou/instance/repositories
 
 3. 打 tag
 ```
-docker tag mind8 registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
+docker tag mind8 registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v4
 ```
 
 4. 推送
 ```
-docker push registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
+docker push registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v4
 ```
 
 ## 如何运行？（纯用 Docker）

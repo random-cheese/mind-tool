@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-DOCKER_IMAGE=registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
+DOCKER_IMAGE=registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v4
 # 镜像地址（公开）
 
 Config_File_Path="/Users/remote_edit/Downloads/mind-tool/config/course.js"
