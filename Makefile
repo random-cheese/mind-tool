@@ -1,8 +1,8 @@
 SHELL=/bin/bash
-DOCKER_IMAGE=registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+DOCKER_IMAGE=registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
 # 镜像地址（公开）
 
-Config_File_Path="/Volumes/BackupPlus/mind-tool/config/course.js"
+Config_File_Path="/Users/remote_edit/Downloads/mind-tool/config/course.js"
 # 下载哪些课程（配置文件的路径）
 
 Download_Path="/Volumes/BackupPlus/mind-tool/course111"
@@ -20,5 +20,17 @@ step-2-run-docker-image:
   -it \
   --mount type=bind,source=$(Download_Path),target=/usr/src/app/courses \
   -v $(Config_File_Path):/usr/src/app/config/course.js \
+  $(DOCKER_IMAGE)); \
+	docker exec -it "$$CID" /bin/bash
+
+# 第三步：调试镜像
+step-3-debug-docker-image:
+	# docker run -d 命令会返回 container ID
+	# 我们把 container ID 存入 CID 变量，然后在 docker exec 命令中使用它
+	CID=$$(docker run -d \
+  -it \
+  --mount type=bind,source=$(Download_Path),target=/usr/src/app/courses \
+  -v $(Config_File_Path):/usr/src/app/config/course.js \
+  -v /Users/remote_edit/Downloads/mind-tool/index.js:/usr/src/app/index.js \
   $(DOCKER_IMAGE)); \
 	docker exec -it "$$CID" /bin/bash

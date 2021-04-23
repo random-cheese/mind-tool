@@ -137,12 +137,14 @@ async function process_course(course_name) {
   // Page 处理
   //
   var pages = json.data.quest.pages;
-  for (let i = 0; i < pages.length; i++) {
+  const filtered_pages = pages.filter((page) => page.type === "day" || page.type === "intro");
+  for (let i = 0; i < filtered_pages.length; i++) {
     const page = pages[i];
     // console.log(page.type);
-    // 已知有两种
+    // 已知类型
     // type: day
     // type: intro
+    // type: info
 
     // console.log(page);
     // var page_example = {
@@ -163,10 +165,6 @@ async function process_course(course_name) {
     //   url: 'https://home.mindvalley.com/quests/en/10x/days/1'
     // }
 
-    // if (page.locked) { // 哪怕 lock 了也不怕，也可以拿到，所以不需要在这里判断
-    //   break;
-    // }
-    // page.locked == false 会运行到这里
     console.log(
       `开始处理 ${page.groupName} ${page.type} ${page.position} 的 ${page.name}`
     );
@@ -182,6 +180,7 @@ async function process_course(course_name) {
     } catch (error) {
       console.log("出现错误");
       console.log(error);
+      console.log(page);
       console.log(page.groupName);
     }
 

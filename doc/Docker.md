@@ -14,7 +14,7 @@ docker build . -t mind8
 ```
 docker run -d \
   -it \
-  --name mindV3 \
+  --name mindV4 \
   --mount type=bind,source=/Users/remote_edit/Downloads/,target=/usr/src/app/courses \
   mind8
 ```
@@ -43,18 +43,18 @@ https://cr.console.aliyun.com/cn-hangzhou/instance/repositories
 
 3. 打 tag
 ```
-docker tag mind8 registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+docker tag mind8 registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
 ```
 
 4. 推送
 ```
-docker push registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+docker push registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
 ```
 
 ## 如何运行？（纯用 Docker）
 1. 获取镜像
 ```
-docker pull registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v2
+docker pull registry.cn-hangzhou.aliyuncs.com/agoodob/mind:v3
 ```
 （为了方便，镜像存到了阿里云上，因为 Docker Hub 非常慢，所以不存在 Docker Hub 上面）
 
